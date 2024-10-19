@@ -1,0 +1,119 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%; /* Ensure the body takes full height */
+}
+
+
+main {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    min-height: calc(100vh - 60px); /* Ensure main takes full height minus navbar */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Soft background color */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #4a90e2; /* Sky blue */
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar h1 {
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f06; /* Pink color on hover */
+}
+
+/* Home Section */
+.home-section {
+    text-align: center;
+    padding: 100px 20px; /* Spacing from navbar */
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+/* Stopwatch Container */
+.stopwatch-container {
+    background: white; /* White background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Centered */
+    max-width: 400px; /* Limit width */
+}
+
+.time {
+    font-size: 60px; /* Large font size */
+    margin-bottom: 20px; /* Space below time display */
+    color: #4a90e2; /* Match navbar color */
+}
+
+/* Button Styles */
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50; /* Green background */
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+    padding: 20px; /* Add padding */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    width: 100%; /* Full width */
+}
